@@ -63,7 +63,8 @@
 </head>
 <body class="bg-white text-gray-800 font-sans">
 
-    <!-- OVERLAY 1: Graphic Design Portfolio --><div id="graphicDesignOverlay" class="fixed inset-0 bg-primary-dark/95 backdrop-blur-sm z-50 hidden transition-opacity duration-300 overflow-y-auto">
+    <!-- OVERLAY 1: Graphic Design Portfolio (UPDATED GALLERY) -->
+    <div id="graphicDesignOverlay" class="fixed inset-0 bg-primary-dark/95 backdrop-blur-sm z-50 hidden transition-opacity duration-300 overflow-y-auto">
         <div class="container mx-auto p-8 md:p-12 lg:p-16 max-w-6xl">
             <div class="flex justify-end">
                 <button onclick="closeGraphicDesignOverlay()" class="text-white text-3xl font-bold hover:text-secondary-blue transition">
@@ -71,38 +72,73 @@
                 </button>
             </div>
             <h2 class="text-5xl md:text-6xl font-extrabold text-secondary-blue mb-8 mt-4">Graphic Design Portfolio</h2>
-            <p class="text-xl text-gray-200 mb-8 max-w-3xl">
+            <p class="text-xl text-gray-200 mb-8 max-w-4xl">
                 Visual communication is key. This gallery showcases my work in branding, digital art, and UI/UX mockups, ensuring your project looks as good as it performs.
             </p>
 
-            <!-- Placeholder Video Embed for Graphic Design --><div class="mb-10 video-container shadow-2xl">
-                 <!-- Replace the placeholder source with your actual YouTube video link (e.g., a reel of your best design work) --><iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ?controls=0&amp;start=10" title="Placeholder Design Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <!-- Placeholder Video Embed for Graphic Design -->
+            <div class="mb-10 video-container shadow-2xl">
+                 <!-- Replace the placeholder source with your actual YouTube video link (e.g., a reel of your best design work) -->
+                 <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ?controls=0&amp;start=10" title="Placeholder Design Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
 
-            <!-- Gallery Grid (Placeholder) --><div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Design Piece 1 --><div class="bg-gray-800 rounded-xl shadow-2xl p-4 transform transition duration-500 hover:scale-[1.02]">
-                    <img src="https://placehold.co/600x450/1F2937/FFFFFF?text=Brand+Identity" alt="Brand Identity Design" class="w-full h-auto rounded-lg mb-4 object-cover">
-                    <h3 class="text-xl font-semibold text-white">Minimalist Logo & Branding</h3>
-                    <p class="text-gray-400 text-sm">Design software: Adobe Illustrator, Figma</p>
+            <!-- Gallery Section: Logos & Branding -->
+            <h3 class="text-3xl font-extrabold text-white mb-6 border-b border-gray-700 pb-2">Logos & Brand Identity</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+                <!-- LOGO EXAMPLE (Uses user's uploaded image) -->
+                <div class="bg-gray-800 rounded-xl shadow-2xl p-4 transform transition duration-500 hover:scale-[1.02] group">
+                    <!-- Replace this 'src' with your actual logo image URL -->
+                    <img src="uploaded:Untitled design.jpg-80265868-a002-4461-b119-221c9a169600" alt="Sample Logo Design" class="w-full h-auto rounded-lg mb-4 object-cover border-2 border-secondary-blue group-hover:border-white">
+                    <h4 class="text-xl font-semibold text-white">My Work: Sample Logo (Fintech Style)</h4>
+                    <p class="text-gray-400 text-sm">Description: Clean, modern design focusing on clarity and brand recall.</p>
                 </div>
-                <!-- Design Piece 2 --><div class="bg-gray-800 rounded-xl shadow-2xl p-4 transform transition duration-500 hover:scale-[1.02]">
-                    <img src="https://placehold.co/600x450/1F2937/FFFFFF?text=Social+Media+Graphics" alt="Social Media Graphics" class="w-full h-auto rounded-lg mb-4 object-cover">
-                    <h3 class="text-xl font-semibold text-white">Campaign Ad Graphics</h3>
-                    <p class="text-gray-400 text-sm">Design software: Adobe Photoshop, Canva</p>
+                <!-- LOGO PLACEHOLDER 2 -->
+                <div class="bg-gray-800 rounded-xl shadow-2xl p-4 transform transition duration-500 hover:scale-[1.02]">
+                    <img src="https://placehold.co/600x450/1F2937/FFFFFF?text=Placeholder+Logo+2" alt="Placeholder Logo Design 2" class="w-full h-auto rounded-lg mb-4 object-cover">
+                    <h4 class="text-xl font-semibold text-white">Placeholder: E-commerce Brand Logo</h4>
+                    <p class="text-gray-400 text-sm">Replace this image and description with your next logo project.</p>
                 </div>
-                <!-- Design Piece 3 --><div class="bg-gray-800 rounded-xl shadow-2xl p-4 transform transition duration-500 hover:scale-[1.02]">
-                    <img src="https://placehold.co/600x450/1F2937/FFFFFF?text=UI%2FUX+Mockup" alt="UI/UX Mockup" class="w-full h-auto rounded-lg mb-4 object-cover">
-                    <h3 class="text-xl font-semibold text-white">App Landing Page Mockup</h3>
-                    <p class="text-gray-400 text-sm">Design software: Figma</p>
+                <!-- STATIONERY PLACEHOLDER -->
+                <div class="bg-gray-800 rounded-xl shadow-2xl p-4 transform transition duration-500 hover:scale-[1.02]">
+                    <img src="https://placehold.co/600x450/1F2937/FFFFFF?text=Placeholder+Business+Card" alt="Placeholder Business Card" class="w-full h-auto rounded-lg mb-4 object-cover">
+                    <h4 class="text-xl font-semibold text-white">Placeholder: Stationery Design Mockup</h4>
+                    <p class="text-gray-400 text-sm">Show how your logo looks across various physical assets.</p>
                 </div>
             </div>
+
+            <!-- Gallery Section: Banners & Social Media -->
+            <h3 class="text-3xl font-extrabold text-white mb-6 border-b border-gray-700 pb-2">Banners & Social Media Graphics</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- BANNER PLACEHOLDER 1 -->
+                <div class="bg-gray-800 rounded-xl shadow-2xl p-4 transform transition duration-500 hover:scale-[1.02]">
+                    <img src="https://placehold.co/600x450/1F2937/FFFFFF?text=Social+Media+Banner" alt="Social Media Banner" class="w-full h-auto rounded-lg mb-4 object-cover">
+                    <h4 class="text-xl font-semibold text-white">Placeholder: YouTube Channel Banner</h4>
+                    <p class="text-gray-400 text-sm">Focus on clear typography and high impact visuals using Canva.</p>
+                </div>
+                <!-- BANNER PLACEHOLDER 2 -->
+                <div class="bg-gray-800 rounded-xl shadow-2xl p-4 transform transition duration-500 hover:scale-[1.02]">
+                    <img src="https://placehold.co/600x450/1F2937/FFFFFF?text=Facebook+Ad+Graphic" alt="Facebook Ad Graphic" class="w-full h-auto rounded-lg mb-4 object-cover">
+                    <h4 class="text-xl font-semibold text-white">Placeholder: Facebook Ad Graphic</h4>
+                    <p class="text-gray-400 text-sm">Designed for high click-through rates and mobile viewing.</p>
+                </div>
+                <!-- PRESENTATION PLACEHOLDER -->
+                <div class="bg-gray-800 rounded-xl shadow-2xl p-4 transform transition duration-500 hover:scale-[1.02]">
+                    <img src="https://placehold.co/600x450/1F2937/FFFFFF?text=Powerful+Presentation+Slide" alt="Powerful Presentation Slide" class="w-full h-auto rounded-lg mb-4 object-cover">
+                    <h4 class="text-xl font-semibold text-white">Placeholder: MS PowerPoint Mastery</h4>
+                    <p class="text-gray-400 text-sm">Visualizing complex data into digestible, clean slides.</p>
+                </div>
+            </div>
+            
             <div class="mt-12 text-center">
-                <p class="text-gray-400">**Note:** This is where your high-resolution graphic design files/images should be placed.</p>
+                <p class="text-gray-400 text-lg p-4 bg-gray-800 rounded-xl border border-gray-700">
+                    📌 **Tip:** To add your own work, simply replace the `src="..."` attribute in the `<img>` tags with your image links (from Imgur, Google Drive, etc.) for each piece of work.
+                </p>
             </div>
         </div>
     </div>
 
-    <!-- OVERLAY 2: Betting Bot Detail --><div id="bettingBotOverlay" class="fixed inset-0 bg-primary-dark/95 backdrop-blur-sm z-50 hidden transition-opacity duration-300 overflow-y-auto">
+    <!-- OVERLAY 2: Betting Bot Detail -->
+    <div id="bettingBotOverlay" class="fixed inset-0 bg-primary-dark/95 backdrop-blur-sm z-50 hidden transition-opacity duration-300 overflow-y-auto">
         <div class="container mx-auto p-8 md:p-12 lg:p-16 max-w-6xl">
             <div class="flex justify-end">
                 <button onclick="closeBettingBotOverlay()" class="text-white text-3xl font-bold hover:text-secondary-blue transition">&times;</button>
@@ -115,11 +151,14 @@
                 </a>
             </div>
 
-            <!-- Project Video --><div class="mb-10 video-container shadow-2xl">
-                 <!-- Replace the placeholder source with your actual YouTube video link showing the bot in action --><iframe src="https://www.youtube.com/embed/q86g9B0_R4E?controls=0&amp;start=10" title="Placeholder Betting Bot Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <!-- Project Video -->
+            <div class="mb-10 video-container shadow-2xl">
+                 <!-- Replace the placeholder source with your actual YouTube video link showing the bot in action -->
+                 <iframe src="https://youtu.be/nIsuwDjcalk" title="Placeholder Betting Bot Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
 
-            <!-- Project Details and Screenshots --><div class="bg-gray-800 p-8 rounded-xl shadow-xl">
+            <!-- Project Details and Screenshots -->
+            <div class="bg-gray-800 p-8 rounded-xl shadow-xl">
                 <h3 class="text-3xl font-bold text-white mb-4">Project Overview</h3>
                 <p class="text-gray-300 mb-6">
                     This advanced Python application was developed to autonomously analyze real-time market data, utilizing sophisticated statistical models to identify and execute high-probability outcomes. It demonstrates high proficiency in data processing and automated execution logic.
@@ -141,7 +180,8 @@
         </div>
     </div>
 
-    <!-- OVERLAY 3: Doc to PDF Automation Tool Detail --><div id="docToPDFOverlay" class="fixed inset-0 bg-primary-dark/95 backdrop-blur-sm z-50 hidden transition-opacity duration-300 overflow-y-auto">
+    <!-- OVERLAY 3: Doc to PDF Automation Tool Detail -->
+    <div id="docToPDFOverlay" class="fixed inset-0 bg-primary-dark/95 backdrop-blur-sm z-50 hidden transition-opacity duration-300 overflow-y-auto">
         <div class="container mx-auto p-8 md:p-12 lg:p-16 max-w-6xl">
             <div class="flex justify-end">
                 <button onclick="closeDocToPDFOverlay()" class="text-white text-3xl font-bold hover:text-secondary-blue transition">&times;</button>
@@ -154,11 +194,14 @@
                 </a>
             </div>
 
-            <!-- Project Video --><div class="mb-10 video-container shadow-2xl">
-                 <!-- Replace the placeholder source with your actual YouTube video link showing the tool workflow --><iframe src="https://www.youtube.com/embed/wX_Y2k8rM7w?controls=0&amp;start=10" title="Placeholder PDF Automation Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <!-- Project Video -->
+            <div class="mb-10 video-container shadow-2xl">
+                 <!-- Replace the placeholder source with your actual YouTube video link showing the tool workflow -->
+                 <iframe src="https://www.youtube.com/embed/wX_Y2k8rM7w?controls=0&amp;start=10" title="Placeholder PDF Automation Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
 
-            <!-- Project Details and Screenshots --><div class="bg-gray-800 p-8 rounded-xl shadow-xl">
+            <!-- Project Details and Screenshots -->
+            <div class="bg-gray-800 p-8 rounded-xl shadow-xl">
                 <h3 class="text-3xl font-bold text-white mb-4">Project Overview</h3>
                 <p class="text-gray-300 mb-6">
                     This highly efficient Python script was developed to handle large-scale document transformations, converting Microsoft Word documents (.doc/.docx) into standardized PDFs quickly and reliably. It drastically reduces the manual administrative burden.
@@ -181,7 +224,8 @@
     </div>
 
 
-    <!-- Header & Navigation --><header class="sticky top-0 bg-white shadow-lg z-40">
+    <!-- Header & Navigation -->
+    <header class="sticky top-0 bg-white shadow-lg z-40">
         <div class="container mx-auto flex justify-between items-center p-4">
             <a href="#home" class="text-2xl font-extrabold text-primary-dark tracking-wider rounded-lg p-1 hover:text-secondary-blue transition duration-300">
                 Mir Siraj Muneer
@@ -195,7 +239,8 @@
             </nav>
             <button id="menu-button" class="md:hidden text-2xl text-primary-dark">☰</button>
         </div>
-        <!-- Mobile Menu --><div id="mobile-menu" class="hidden md:hidden p-4 bg-primary-dark text-white shadow-xl">
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden p-4 bg-primary-dark text-white shadow-xl">
             <a href="#skills" class="block py-2 hover:bg-gray-700 rounded-md">Skills</a>
             <a href="#projects" class="block py-2 hover:bg-gray-700 rounded-md">Projects</a>
             <a href="#reviews" class="block py-2 hover:bg-gray-700 rounded-md">Reviews</a>
@@ -205,7 +250,8 @@
     </header>
 
     <main>
-        <!-- Hero Section --><section id="home" class="section-padding bg-primary-dark text-white min-h-screen flex items-center justify-center relative overflow-hidden">
+        <!-- Hero Section -->
+        <section id="home" class="section-padding bg-primary-dark text-white min-h-screen flex items-center justify-center relative overflow-hidden">
             <div class="container mx-auto px-4 max-w-5xl flex flex-col md:flex-row items-center text-center md:text-left relative z-10">
                 <div class="md:w-1/2 flex justify-center md:justify-start mb-8 md:mb-0">
                     <img src="avatar.png" alt="Mir Siraj Muneer Profile" class="w-64 h-64 md:w-80 md:h-80 rounded-full object-cover border-4 border-secondary-blue shadow-lg transform transition-transform duration-500 hover:scale-[1.03]">
@@ -216,10 +262,10 @@
                         Mir Siraj Muneer
                     </h1>
                     <h2 class="text-3xl md:text-4xl font-light mb-8">
-                        <span class="font-bold">Freelancer</span> | Computer Science Student | Graphic Designer
+                        <span class="font-bold">Freelancer</span> | Computer Science Student | Tech Enthusiast
                     </h2>
                     <p class="text-gray-300 text-lg mb-10 max-w-4xl">
-                        I combine technical expertise from my Computer Science studies with a sharp eye for design, offering comprehensive solutions from robust Python automation to compelling visual branding. Let's build something exceptional.
+                        I combine comprehensive technical expertise from my Computer Science studies—spanning **Flutter/Dart Mobile Development**, **Java desktop GUI development**, Python automation, C# game development, and IT systems management—with exceptional **problem-solving abilities** and a sharp eye for visual design. Let's build something exceptional together.
                     </p>
                     <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 justify-center md:justify-start">
                         <a href="#projects" class="px-8 py-3 text-lg font-semibold bg-secondary-blue text-white rounded-full hover:bg-blue-600 transition duration-300 transform hover:scale-[1.05] shadow-lg">
@@ -233,51 +279,76 @@
             </div>
         </section>
 
-        <!-- Skills Section --><section id="skills" class="section-padding bg-accent-light">
+        <!-- Skills Section -->
+        <section id="skills" class="section-padding bg-accent-light">
             <div class="container mx-auto px-4 max-w-5xl">
                 <h2 class="text-4xl font-extrabold text-primary-dark mb-4 border-b-4 border-secondary-blue inline-block pb-1">My Expertise</h2>
                 <p class="text-xl text-gray-600 mb-12">
-                    Drawing from my Computer Science background, I focus on efficient, scalable solutions and clean design principles. (Content from your CV will go here.)
+                    My skills span core programming, game development, system administration, and professional productivity tools.
                 </p>
 
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    <!-- Tech Skill Block --><div class="bg-white p-6 rounded-xl shadow-xl hover:shadow-2xl transition duration-300 transform hover:-translate-y-1">
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                    
+                    <!-- Skill Block 1: Core Programming & GUI (UPDATED) -->
+                    <div class="bg-white p-6 rounded-xl shadow-xl hover:shadow-2xl transition duration-300 transform hover:-translate-y-1">
                         <div class="text-secondary-blue text-3xl mb-3">💻</div>
-                        <h3 class="text-2xl font-semibold mb-3 text-primary-dark">Programming & Development</h3>
-                        <p class="text-gray-600 font-medium">Core Languages:</p>
-                        <ul class="list-disc list-inside ml-4 text-gray-600">
-                            <li>Python (Automation, Scripting)</li>
-                            <li>C++ (DSA, Core CS)</li>
-                            <li>JavaScript / HTML / CSS (Web Development)</li>
+                        <h3 class="text-lg font-semibold mb-3 text-primary-dark">Core Programming & Desktop GUI</h3>
+                        <ul class="list-disc list-inside ml-4 text-gray-600 text-sm">
+                            <li>**Java** (Core & OOP)</li>
+                            <li>**Swing, JavaFX/ SceneBuilder** (Desktop GUI)</li>
+                            <li>Python (Scripting, Automation)</li>
                         </ul>
                     </div>
 
-                    <!-- Automation & Scripting Block --><div class="bg-white p-6 rounded-xl shadow-xl hover:shadow-2xl transition duration-300 transform hover:-translate-y-1">
+                    <!-- Skill Block 2: Game & Engine Development -->
+                    <div class="bg-white p-6 rounded-xl shadow-xl hover:shadow-2xl transition duration-300 transform hover:-translate-y-1">
+                        <div class="text-secondary-blue text-3xl mb-3">🎮</div>
+                        <h3 class="text-lg font-semibold mb-3 text-primary-dark">Game Engine Development</h3>
+                        <ul class="list-disc list-inside ml-4 text-gray-600 text-sm">
+                            <li>**Unity Engine** (3D/2D)</li>
+                            <li>**C#** Programming</li>
+                            <li>Game Logic & Physics</li>
+                            <li>Asset Management</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Skill Block 3: IT & System Support -->
+                    <div class="bg-white p-6 rounded-xl shadow-xl hover:shadow-2xl transition duration-300 transform hover:-translate-y-1">
                         <div class="text-secondary-blue text-3xl mb-3">⚙️</div>
-                        <h3 class="text-2xl font-semibold mb-3 text-primary-dark">Automation & Data Tools</h3>
-                        <p class="text-gray-600 font-medium">Frameworks/Libraries:</p>
-                        <ul class="list-disc list-inside ml-4 text-gray-600">
-                            <li>Pandas & NumPy</li>
-                            <li>Selenium / Requests (Web Scraping)</li>
-                            <li>PDF Processing Libraries</li>
+                        <h3 class="text-lg font-semibold mb-3 text-primary-dark">IT & System Support</h3>
+                        <ul class="list-disc list-inside ml-4 text-gray-600 text-sm">
+                            <li>OS Troubleshooting (Windows, Linux)</li>
+                            <li>Virtual Machines (VM) Setup</li>
+                            <li>Hardware/Software Diagnosis</li>
+                            <li>Remote/Onsite IT Support</li>
                         </ul>
                     </div>
 
-                    <!-- Design Block --><div class="bg-white p-6 rounded-xl shadow-xl hover:shadow-2xl transition duration-300 transform hover:-translate-y-1">
-                        <div class="text-secondary-blue text-3xl mb-3">🎨</div>
-                        <h3 class="text-2xl font-semibold mb-3 text-primary-dark">Graphic & Visual Design</h3>
-                        <p class="text-gray-600 font-medium">Tools & Focus:</p>
-                        <ul class="list-disc list-inside ml-4 text-gray-600">
-                            <li>Adobe Illustrator, Photoshop</li>
-                            <li>Figma (UI/UX Mockups)</li>
-                            <li>Logo Design & Brand Identity</li>
+                    <!-- Skill Block 4: Mobile App Development -->
+                    <div class="bg-white p-6 rounded-xl shadow-xl hover:shadow-2xl transition duration-300 transform hover:-translate-y-1">
+                        <div class="text-secondary-blue text-3xl mb-3">📱</div>
+                        <h3 class="text-lg font-semibold mb-3 text-primary-dark">Mobile App Development</h3>
+                        <ul class="list-disc list-inside ml-4 text-gray-600 text-sm">
+                            <li>**Flutter / Dart** (Cross-Platform)</li>
+                            <li>State Management (Provider, Bloc)</li>
+                            <li>Mobile UI/UX Design</li>
+                            <li>API Integration (REST/JSON)</li>
                         </ul>
                     </div>
+                </div>
+                
+                <!-- NOTE: Adding a design summary here since the old block was replaced. -->
+                <div class="mt-8 p-4 bg-white rounded-xl shadow-inner border-l-4 border-secondary-blue">
+                    <h3 class="text-lg font-semibold text-primary-dark">Note on Design:</h3>
+                    <p class="text-sm text-gray-600">
+                        My expertise in **Canva** (High-Fidelity Graphics) and **MS Office** (Powerful Presentations) is primarily demonstrated within the Graphic Design Portfolio link in the Projects section.
+                    </p>
                 </div>
             </div>
         </section>
 
-        <!-- Projects Section --><section id="projects" class="section-padding bg-white">
+        <!-- Projects Section -->
+        <section id="projects" class="section-padding bg-white">
             <div class="container mx-auto px-4 max-w-5xl">
                 <h2 class="text-4xl font-extrabold text-primary-dark mb-4 border-b-4 border-secondary-blue inline-block pb-1">Featured Projects</h2>
                 <p class="text-xl text-gray-600 mb-12">
@@ -285,7 +356,8 @@
                 </p>
 
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    <!-- Project 1: Betting Bot (Clickable) --><div onclick="openBettingBotOverlay()" class="bg-accent-light p-6 rounded-xl shadow-xl flex flex-col h-full transform transition duration-500 hover:scale-[1.02] cursor-pointer">
+                    <!-- Project 1: Betting Bot (Clickable) -->
+                    <div onclick="openBettingBotOverlay()" class="bg-accent-light p-6 rounded-xl shadow-xl flex flex-col h-full transform transition duration-500 hover:scale-[1.02] cursor-pointer">
                         <div class="text-5xl mb-4 text-secondary-blue">🤖</div>
                         <h3 class="text-2xl font-bold mb-3 text-primary-dark">Betting Bot (Python)</h3>
                         <p class="text-gray-700 mb-4 flex-grow">
@@ -296,7 +368,8 @@
                         </p>
                     </div>
 
-                    <!-- Project 2: Doc to PDF Automation (Clickable) --><div onclick="openDocToPDFOverlay()" class="bg-accent-light p-6 rounded-xl shadow-xl flex flex-col h-full transform transition duration-500 hover:scale-[1.02] cursor-pointer">
+                    <!-- Project 2: Doc to PDF Automation (Clickable) -->
+                    <div onclick="openDocToPDFOverlay()" class="bg-accent-light p-6 rounded-xl shadow-xl flex flex-col h-full transform transition duration-500 hover:scale-[1.02] cursor-pointer">
                         <div class="text-5xl mb-4 text-secondary-blue">📄</div>
                         <h3 class="text-2xl font-bold mb-3 text-primary-dark">Doc to PDF Automation Tool</h3>
                         <p class="text-gray-700 mb-4 flex-grow">
@@ -307,14 +380,15 @@
                         </p>
                     </div>
 
-                    <!-- Project 3: Graphic Design Portfolio (Special Click Action) --><div onclick="openGraphicDesignOverlay()" class="bg-secondary-blue p-6 rounded-xl shadow-2xl cursor-pointer flex flex-col h-full justify-between transform transition duration-500 hover:scale-[1.02] hover:shadow-primary-dark">
-                        <div class="text-5xl mb-4 text-white">🖼️</div>
+                    <!-- Project 3: Graphic Design Portfolio -->
+                    <div onclick="openGraphicDesignOverlay()" class="bg-accent-light p-6 rounded-xl shadow-xl flex flex-col h-full justify-between transform transition duration-500 hover:scale-[1.02] cursor-pointer">
+                        <div class="text-5xl mb-4 text-secondary-blue">🖼️</div>
                         <div>
-                            <h3 class="text-2xl font-bold mb-3 text-white">Graphic Design Portfolio</h3>
-                            <p class="text-blue-200 mb-4 flex-grow">
-                                **Click to View:** Explore my visual work, including logos, branding, and digital illustrations. The perfect fusion of creativity and technical polish.
+                            <h3 class="text-2xl font-bold mb-3 text-primary-dark">Graphic Design Portfolio</h3>
+                            <p class="text-gray-700 mb-4 flex-grow">
+                                **Click to View:** Explore my visual work, including logos, branding, and powerful **Canva** presentations. The perfect fusion of creativity and technical polish.
                             </p>
-                            <p class="text-sm font-semibold text-white underline">
+                            <p class="text-sm font-semibold text-secondary-blue underline">
                                 View Design Gallery & Video →
                             </p>
                         </div>
@@ -323,7 +397,8 @@
             </div>
         </section>
 
-        <!-- Client Reviews / Testimonials Section --><section id="reviews" class="section-padding bg-primary-dark text-white">
+        <!-- Client Reviews / Testimonials Section -->
+        <section id="reviews" class="section-padding bg-primary-dark text-white">
             <div class="container mx-auto px-4 max-w-5xl">
                 <h2 class="text-4xl font-extrabold text-secondary-blue mb-4 text-center">What Clients Say</h2>
                 <p class="text-xl text-gray-300 mb-12 text-center">
@@ -331,21 +406,24 @@
                 </p>
 
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    <!-- Review 1 --><div class="bg-gray-800 p-6 rounded-xl shadow-2xl transform hover:bg-gray-700 transition duration-300">
+                    <!-- Review 1 -->
+                    <div class="bg-gray-800 p-6 rounded-xl shadow-2xl transform hover:bg-gray-700 transition duration-300">
                         <p class="text-3xl text-secondary-blue mb-3">❝</p>
                         <p class="text-gray-300 italic mb-4">"Mir Siraj delivered the Python automation tool ahead of schedule. His code was exceptionally clean, well-documented, and achieved a 40% efficiency boost in our document handling process. A genuine technical talent."</p>
                         <p class="font-bold text-white">Aisha Khan</p>
                         <p class="text-sm text-secondary-blue">CTO, Tech Solutions Inc.</p>
                     </div>
 
-                    <!-- Review 2 --><div class="bg-gray-800 p-6 rounded-xl shadow-2xl transform hover:bg-gray-700 transition duration-300">
+                    <!-- Review 2 -->
+                    <div class="bg-gray-800 p-6 rounded-xl shadow-2xl transform hover:bg-gray-700 transition duration-300">
                         <p class="text-3xl text-secondary-blue mb-3">❝</p>
                         <p class="text-gray-300 italic mb-4">"I hired him for a complex logo design and was blown away by his creativity. He captured the essence of our brand perfectly. His dual skills in CS and design are a huge asset."</p>
                         <p class="font-bold text-white">Omar Hassan</p>
                         <p class="text-sm text-secondary-blue">Founder, Creative Agency</p>
                     </div>
 
-                    <!-- Review 3 --><div class="bg-gray-800 p-6 rounded-xl shadow-2xl transform hover:bg-gray-700 transition duration-300">
+                    <!-- Review 3 -->
+                    <div class="bg-gray-800 p-6 rounded-xl shadow-2xl transform hover:bg-gray-700 transition duration-300">
                         <p class="text-3xl text-secondary-blue mb-3">❝</p>
                         <p class="text-gray-300 italic mb-4">"Working with Mir Siraj on the Betting Bot project was seamless. His understanding of data structures and algorithms allowed him to build a stable and robust system. Highly recommend for any Python development."</p>
                         <p class="font-bold text-white">Zara Ali</p>
@@ -355,7 +433,8 @@
             </div>
         </section>
 
-        <!-- FAQ Section --><section id="faq" class="section-padding bg-accent-light">
+        <!-- FAQ Section -->
+        <section id="faq" class="section-padding bg-accent-light">
             <div class="container mx-auto px-4 max-w-5xl">
                 <h2 class="text-4xl font-extrabold text-primary-dark mb-4 border-b-4 border-secondary-blue inline-block pb-1">Frequently Asked Questions</h2>
                 <p class="text-xl text-gray-600 mb-12">
@@ -363,46 +442,61 @@
                 </p>
 
                 <div class="space-y-4">
-                    <!-- FAQ 1 --><div class="bg-white rounded-xl shadow-lg p-5">
+                    <!-- FAQ 1 (NEW: Problem Solving) -->
+                    <div class="bg-white rounded-xl shadow-lg p-5">
                         <h3 class="text-xl font-semibold text-secondary-blue mb-2 cursor-pointer" onclick="toggleFAQ(1)">
-                            1. What is your primary area of focus as a developer?
+                            1. How do you approach complex technical problems?
                         </h3>
                         <div id="faq-content-1" class="text-gray-700 hidden mt-2">
-                            My primary focus is **Python development and automation**, leveraging my Computer Science foundation to create efficient, performance-driven solutions, particularly in scripting, data processing, and back-end logic.
+                            My approach is systematic: I define the problem clearly, break it down into smaller, manageable tasks (divide and conquer), and identify the most efficient algorithm or data structure for the solution. My background in Python automation and Java development has honed my ability to quickly diagnose and implement robust, scalable fixes.
                         </div>
                     </div>
 
-                    <!-- FAQ 2 --><div class="bg-white rounded-xl shadow-lg p-5">
+                    <!-- FAQ 2 (Renumbered from 1) -->
+                    <div class="bg-white rounded-xl shadow-lg p-5">
                         <h3 class="text-xl font-semibold text-secondary-blue mb-2 cursor-pointer" onclick="toggleFAQ(2)">
-                            2. Do you handle both coding projects and graphic design?
+                            2. What is your primary area of focus as a developer?
                         </h3>
                         <div id="faq-content-2" class="text-gray-700 hidden mt-2">
-                            Yes, absolutely. I offer both services. I can develop the technical core of your application (coding) and ensure it has a professional visual identity (graphic design, branding, and UI mockups). This dual expertise ensures consistency in your final product.
+                            My focus is highly diverse, spanning **Flutter/Dart mobile development**, **Java desktop GUI development**, Python automation, C# game development with Unity, and IT systems management. I offer the ability to handle both coding logic and system deployment/support.
                         </div>
                     </div>
 
-                    <!-- FAQ 3 --><div class="bg-white rounded-xl shadow-lg p-5">
+                    <!-- FAQ 3 (Renumbered from 2) -->
+                    <div class="bg-white rounded-xl shadow-lg p-5">
                         <h3 class="text-xl font-semibold text-secondary-blue mb-2 cursor-pointer" onclick="toggleFAQ(3)">
-                            3. What is your typical turnaround time for a project?
+                            3. Do you offer IT support services?
                         </h3>
                         <div id="faq-content-3" class="text-gray-700 hidden mt-2">
-                            Turnaround time is project-dependent. Simple automation scripts might take a few days, while complex development or large branding packages require more time. After reviewing your requirements, I provide a detailed project timeline and fixed cost estimate.
+                            Yes, I have experience providing remote or onsite IT support, including troubleshooting issues on Windows and Linux operating systems, and managing virtual machine (VM) environments.
                         </div>
                     </div>
 
-                    <!-- FAQ 4 --><div class="bg-white rounded-xl shadow-lg p-5">
+                    <!-- FAQ 4 (Renumbered from 3) -->
+                    <div class="bg-white rounded-xl shadow-lg p-5">
                         <h3 class="text-xl font-semibold text-secondary-blue mb-2 cursor-pointer" onclick="toggleFAQ(4)">
-                            4. Do you provide post-launch support or maintenance?
+                            4. What design tools do you use?
                         </h3>
                         <div id="faq-content-4" class="text-gray-700 hidden mt-2">
-                            Yes, I include a 7-day bug-fix guarantee for all development work. Long-term maintenance contracts are also available and can be discussed during the final project delivery phase.
+                            I am an expert in **Canva** for creating high-fidelity graphics and social media content, and I excel at using **MS Office** to produce powerful, professional presentations.
+                        </div>
+                    </div>
+
+                    <!-- FAQ 5 (Renumbered from 4 - UPDATED) -->
+                    <div class="bg-white rounded-xl shadow-lg p-5">
+                        <h3 class="text-xl font-semibold text-secondary-blue mb-2 cursor-pointer" onclick="toggleFAQ(5)">
+                            5. What kind of Java development do you specialize in?
+                        </h3>
+                        <div id="faq-content-5" class="text-gray-700 hidden mt-2">
+                            I specialize in **Core Java** (Object-Oriented Programming) and creating cross-platform desktop applications using **Swing**, **JavaFX**, and **SceneBuilder** for building robust Graphical User Interfaces (GUIs).
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Contact Section --><section id="contact" class="section-padding bg-primary-dark text-white">
+        <!-- Contact Section -->
+        <section id="contact" class="section-padding bg-primary-dark text-white">
             <div class="container mx-auto px-4 max-w-5xl">
                 <h2 class="text-4xl font-extrabold text-secondary-blue mb-4 text-center">Let's Connect</h2>
                 <p class="text-xl text-gray-300 mb-12 text-center">
@@ -410,7 +504,8 @@
                 </p>
 
                 <div class="max-w-xl mx-auto bg-gray-800 p-8 rounded-xl shadow-2xl">
-                    <!-- The action uses mailto: to send the form data to your email via the user's local email client --><form action="mailto:talpurmirsiraj988@gmail.com" method="POST" enctype="text/plain" class="space-y-6">
+                    <!-- The action uses mailto: to send the form data to your email via the user's local email client -->
+                    <form action="mailto:talpurmirsiraj988@gmail.com" method="POST" enctype="text/plain" class="space-y-6">
                         <p class="text-sm text-gray-400 italic text-center">
                             Note: Clicking 'Send Message' will open your default email application.
                         </p>
@@ -431,17 +526,25 @@
                         </button>
                     </form>
 
-                    <div class="mt-8 text-center space-x-6">
-                        <!-- Clickable LinkedIn Link --><a href="https://www.linkedin.com/in/mir-siraj-muneer-0a265a2b4/" target="_blank" class="text-gray-400 hover:text-secondary-blue transition duration-300">
+                    <div class="mt-8 text-center flex flex-wrap justify-center gap-4">
+                        <!-- Clickable Email Link (NEW) -->
+                        <a href="mailto:talpurmirsiraj988@gmail.com" class="text-gray-400 hover:text-secondary-blue transition duration-300 whitespace-nowrap">
+                            <span class="text-xl">📧</span> talpurmirsiraj988@gmail.com
+                        </a>
+                        <!-- Clickable LinkedIn Link -->
+                        <a href="https://www.linkedin.com/in/mir-siraj-muneer-0a265a2b4/" target="_blank" class="text-gray-400 hover:text-secondary-blue transition duration-300">
                             <span class="text-xl">💼</span> LinkedIn
                         </a>
-                        <!-- Clickable GitHub Link --><a href="https://github.com/Siraj7S6" target="_blank" class="text-gray-400 hover:text-secondary-blue transition duration-300">
+                        <!-- Clickable GitHub Link -->
+                        <a href="https://github.com/Siraj7S6" target="_blank" class="text-gray-400 hover:text-secondary-blue transition duration-300">
                             <span class="text-xl">🐙</span> GitHub
                         </a>
-                        <!-- Clickable Facebook Link --><a href="https://www.facebook.com/Pythonators/" target="_blank" class="text-gray-400 hover:text-secondary-blue transition duration-300">
+                        <!-- Clickable Facebook Link -->
+                        <a href="https://www.facebook.com/Pythonators/" target="_blank" class="text-gray-400 hover:text-secondary-blue transition duration-300">
                             <span class="text-xl">👍</span> Facebook
                         </a>
-                        <!-- UPDATED: Clickable WhatsApp Link with whitespace-nowrap to prevent line breaks --><a href="https://wa.me/923483177980" target="_blank" class="text-gray-400 hover:text-secondary-blue transition duration-300 whitespace-nowrap">
+                        <!-- Clickable WhatsApp Link -->
+                        <a href="https://wa.me/923483177980" target="_blank" class="text-gray-400 hover:text-secondary-blue transition duration-300 whitespace-nowrap">
                             <span class="text-xl">📞</span> +92 348 3177980
                         </a>
                     </div>
@@ -450,7 +553,8 @@
         </section>
     </main>
 
-    <!-- Footer --><footer class="bg-gray-900 text-center p-6 text-gray-400">
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-center p-6 text-gray-400">
         <p>&copy; 2024 Mir Siraj Muneer. All Rights Reserved. Built with passion and code.</p>
     </footer>
 
@@ -515,5 +619,4 @@
         }
     </script>
 </body>
-
 </html>
